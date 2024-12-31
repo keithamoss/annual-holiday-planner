@@ -1,0 +1,87 @@
+:root {
+  --weekend-color: #d9ead3;
+  --weekend-text-color: #38761d;
+  --wa-pub-hol-color: #f4cccc;
+  --wa-pub-hol-text-color: #990000;
+  --act-pub-hol-color: #fff2cc;
+  --act-pub-hol-text-color: #bf9000;
+  --birthday-color: #d9d2e9;
+  --birthday-text-color: #351c75;
+  --school-hol-color: #4a86e8;
+  --empty-day-color: #efefef;
+}
+
+@page {
+  size: A4;
+  margin: 0.2in 0.44in 0.2in 0.44in;
+}
+
+/* Ref: https: //github.com/Kozea/WeasyPrint/issues/1398#issuecomment-880556717 */
+@page page_orientation {
+  size: landscape;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  page: page_orientation;
+  font-family: Arial;
+}
+
+table {
+  width: 100%;
+  height: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 0.5px solid black;
+  padding: 5.35px;
+  /* Fiddled just enough to make it fit nicely on one A4 page */
+  font-size: 8px;
+}
+
+tr.year th {
+  font-size: 19px;
+  font-weight: 700;
+  border: none;
+  padding: 8px;
+}
+
+tr.months th {
+  font-size: 10px;
+  font-weight: 700;
+  text-align: center;
+}
+
+td.weekend {
+  color: var(--weekend-text-color);
+  background-color: var(--weekend-color);
+}
+
+td.school_hol_start {
+  border: 2px solid var(--school-hol-color);
+  border-bottom: inherit;
+}
+
+td.school_hol_end {
+  border: 2px solid var(--school-hol-color);
+  border-top: inherit;
+}
+
+td.school_hol_legend {
+  border: 2px solid var(--school-hol-color);
+}
+
+td.empty {
+  background-color: var(--empty-day-color);
+}
+
+tr.noborder td {
+  border: none;
+}

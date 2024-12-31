@@ -1,0 +1,2 @@
+holidays==0.63
+weasyprint==63.1

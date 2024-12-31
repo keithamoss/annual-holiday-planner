@@ -1,0 +1,125 @@
+td.birthday {
+  color: var(--birthday-text-color);
+  background-color: var(--birthday-color);
+}
+
+td.wa_pub_hol {
+  color: var(--wa-pub-hol-text-color);
+  background-color: var(--wa-pub-hol-color);
+}
+
+td.act_pub_hol {
+  color: var(--act-pub-hol-text-color);
+  background-color: var(--act-pub-hol-color);
+}
+
+td.weekday.wa_pub_hol.birthday {
+  color: var(--wa-pub-hol-text-color);
+  background: linear-gradient(to right,
+      var(--wa-pub-hol-color),
+      var(--wa-pub-hol-color) 50%,
+      var(--birthday-color) 50%,
+      var(--birthday-color));
+}
+
+td.weekday.act_pub_hol.birthday {
+  color: var(--act-pub-hol-text-color);
+  background: linear-gradient(to right,
+      var(--act-pub-hol-color),
+      var(--act-pub-hol-color) 50%,
+      var(--birthday-color) 50%,
+      var(--birthday-color));
+}
+
+td.weekday.wa_pub_hol.act_pub_hol {
+  color: var(--wa-pub-hol-text-color);
+  background: linear-gradient(to right,
+      var(--wa-pub-hol-color),
+      var(--wa-pub-hol-color) 50%,
+      var(--act-pub-hol-color) 50%,
+      var(--act-pub-hol-color));
+}
+
+td.weekday.wa_pub_hol.act_pub_hol.birthday {
+  color: var(--wa-pub-hol-text-color);
+  background: linear-gradient(to right,
+      var(--wa-pub-hol-color) 0%,
+      var(--wa-pub-hol-color) 33%,
+      var(--act-pub-hol-color) 33%,
+      var(--act-pub-hol-color) 66%,
+      var(--birthday-color) 66%,
+      var(--birthday-color));
+}
+
+td.weekend.wa_pub_hol {
+  color: var(--weekend-text-color);
+  background: linear-gradient(to right,
+      var(--weekend-color),
+      var(--weekend-color) 50%,
+      var(--wa-pub-hol-color) 50%,
+      var(--wa-pub-hol-color));
+}
+
+td.weekend.act_pub_hol {
+  color: var(--weekend-text-color);
+  background: linear-gradient(to right,
+      var(--weekend-color),
+      var(--weekend-color) 50%,
+      var(--act-pub-hol-color) 50%,
+      var(--act-pub-hol-color));
+}
+
+td.weekend.birthday {
+  color: var(--weekend-text-color);
+  background: linear-gradient(to right,
+      var(--weekend-color),
+      var(--weekend-color) 50%,
+      var(--birthday-color) 50%,
+      var(--birthday-color));
+}
+
+td.weekend.wa_pub_hol.birthday {
+  color: var(--weekend-text-color);
+  background: linear-gradient(to right,
+      var(--weekend-color) 0%,
+      var(--weekend-color) 33%,
+      var(--wa-pub-hol-color) 33%,
+      var(--wa-pub-hol-color) 66%,
+      var(--birthday-color) 66%,
+      var(--birthday-color));
+}
+
+td.weekend.act_pub_hol.birthday {
+  color: var(--weekend-text-color);
+  background: linear-gradient(to right,
+      var(--weekend-color) 0%,
+      var(--weekend-color) 33%,
+      var(--act-pub-hol-color) 33%,
+      var(--act-pub-hol-color) 66%,
+      var(--birthday-color) 66%,
+      var(--birthday-color));
+}
+
+td.weekend.wa_pub_hol.act_pub_hol {
+  color: var(--weekend-text-color);
+  background: linear-gradient(to right,
+      var(--weekend-color) 0%,
+      var(--weekend-color) 33%,
+      var(--wa-pub-hol-color) 33%,
+      var(--wa-pub-hol-color) 66%,
+      var(--act-pub-hol-color) 66%,
+      var(--act-pub-hol-color));
+}
+
+td.weekend.wa_pub_hol.act_pub_hol.birthday {
+  color: var(--weekend-text-color);
+  background: linear-gradient(to right,
+      var(--weekend-color) 0%,
+      var(--weekend-color) 25%,
+      var(--wa-pub-hol-color) 25%,
+      var(--wa-pub-hol-color) 50%,
+      var(--act-pub-hol-color) 50%,
+      var(--act-pub-hol-color) 75%,
+      var(--birthday-color) 75%,
+      var(--birthday-color));
+}
